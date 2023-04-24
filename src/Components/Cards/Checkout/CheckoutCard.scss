@@ -1,0 +1,107 @@
+.checkout-card {
+    height: 150px;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 12px;
+
+    img {
+        max-height: 100%;
+    }
+
+    .product-description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: center;
+
+        .product-name {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .product-price-count {
+            font-weight: bold;
+        }
+    }
+
+    .product-action-buttons {
+        display: flex;
+        column-gap: 4px;
+
+        button {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: rgb(246, 227, 139);
+            border-radius: 4px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .decrease-count, .increase-count {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .checkout-card {
+        height: 100px;
+        padding: 12px;
+
+        .product-description {
+            .product-name {
+                font-size: 12px;
+            }
+
+            .product-price-count {
+                font-size: 12px;
+            }
+        }
+
+        .product-action-buttons {
+            button {
+                font-size: 12px;
+            }
+
+            .decrease-count, .increase-count {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .checkout-card {
+        height: 60px;
+        padding: 10px;
+
+        .product-description {
+            .product-name {
+                font-size: 10px;
+            }
+
+            .product-price-count {
+                font-size: 10px;
+            }
+        }
+
+        .product-action-buttons {
+            button {
+                font-size: 10px;
+            }
+
+            .decrease-count, .increase-count {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}

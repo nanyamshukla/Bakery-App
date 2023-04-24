@@ -1,0 +1,86 @@
+.category-card {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    column-gap: 5%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &-logo {
+        max-height: 100%;
+    }
+
+    &-info {
+        &-heading {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: fantasy;
+        }
+
+        &-description {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .category-card {
+        column-gap: 10%;
+        padding: 10px;
+
+        &-info {
+            &-heading {
+                font-size: 24px;
+            }
+
+            &-description {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .category-card {
+        column-gap: 10%;
+        padding: 10px;
+
+        &-logo {
+            max-width: 35%;
+        }
+
+        &-info {
+            &-heading {
+                font-size: 16px;
+            }
+
+            &-description {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .category-card {
+        column-gap: 8%;
+        padding: 8px;
+
+        &-logo {
+            max-width: 45%;
+        }
+
+        &-info {
+            &-heading {
+                font-size: 12px;
+            }
+
+            &-description {
+                font-size: 8px;
+            }
+        }
+    }
+}
+

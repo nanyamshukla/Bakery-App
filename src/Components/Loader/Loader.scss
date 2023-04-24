@@ -1,0 +1,12 @@
+.loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+    .loader-gif {
+        max-width: 40px;
+    }
+}

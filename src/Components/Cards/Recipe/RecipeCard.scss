@@ -1,0 +1,106 @@
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &-img-wrapper {
+        cursor: pointer;
+        width: 100%;
+        height: 250px;
+        border: 4px solid white;
+        position: relative;
+        overflow: hidden;
+        
+        .recipe-card-img {
+            max-height: 100%;
+            transition: transform 0.3s ease-in;
+        }
+
+        .recipe-card-area-category {
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+            font-size: 16px;
+            padding: 20px;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+    
+        &:hover .recipe-card-area-category {
+            opacity: 1;
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 8px;
+        padding: 12px;
+        width: 100%;
+        height: calc(100% - 250px);
+        position: relative;
+
+        &-name {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .recipe-card {
+        width: 200px;
+
+        &-img-wrapper {
+            width: 200px;
+            height: 200px;
+
+            .recipe-card-area-category {
+                font-size: 12px;
+                padding: 12px;
+            }
+        }
+
+        &-info {
+            height: calc(100% - 200px);
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .recipe-card {
+        width: 150px;
+
+        &-img-wrapper {
+            width: 150px;
+            height: 150px;
+
+            .recipe-card-area-category {
+                font-size: 10px;
+                padding: 10px;
+            }
+        }
+
+        &-info {
+            height: calc(100% - 150px);
+        }
+    }
+}

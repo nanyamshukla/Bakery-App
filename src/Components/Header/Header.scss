@@ -1,0 +1,125 @@
+.header {
+    margin-bottom: -75px;
+    width: 100vw;
+    left: -15vw;
+    position: relative;
+
+    .head-strip {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        height: 75px;
+        background-color: rgb(246, 227, 139);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 1px 2px rgba(69, 73, 20, 0.527);
+
+        .app-logo-link {
+            height: 100%;
+
+            .app-logo {
+                max-height: 100%;
+                cursor: pointer;
+            }
+        }
+
+        .cart-logo-link {
+            height: 100%;
+
+            .cart {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                cursor: pointer;
+
+                    
+                .cart-logo {
+                    max-height: 100%;
+                }
+
+                .cart-count {
+                    width: 24px;
+                    height: 24px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .header-bg-drop {
+        height: 225px;
+        background-color: rgba(233, 180, 110, 0.322);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .header {
+        margin-bottom: -62.5px;
+        left: -5vw;
+
+        .head-strip {
+            height: 50px;
+
+            .cart-logo-link {
+                .cart {
+                    column-gap: 4px;
+
+                    .cart-count {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+
+        .header-bg-drop {
+            height: 175px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .header-bg-drop {
+            height: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        margin-bottom: -30px;
+        left: -2.5vw;
+
+        .head-strip {
+            height: 40px;
+            padding: 10px;
+
+            .cart-logo-link {
+                .cart {
+                    column-gap: 4px;
+
+                    .cart-count {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+
+        .header-bg-drop {
+            height: 100px;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.recipe-details {
+    margin: 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .close-recipe-details {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        }
+    }
+
+    .meal-preview {
+        display: flex;
+        column-gap: 40px;
+        margin: 40px 0;
+        align-items: center;
+
+        .meal-image {
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 0 4px black;
+        }
+
+        .meal-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: center;
+
+            .meal-name {
+                font-size: 40px;
+                font-weight: bold;
+                text-decoration: underline;
+                margin: 0;
+            }
+    
+            .meal-area-category {
+                display: flex;
+                flex-direction: column;
+                padding: 24px;
+                border: 1px dotted red;
+            }
+        }
+    }
+
+    .meal-instructions {
+        margin: 0;
+        box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        padding: 12px;
+    }
+
+    .meal-ingredients {
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .ingredient {
+            padding: 8px 12px;
+            border: 1px solid rgba(0,0,0,0.5);
+            border-radius: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .recipe-details {
+        .close-recipe-details {
+            width: 32px;
+            height: 32px;
+            font-size: 20px;
+        }
+
+        .meal-preview {
+            .meal-image {
+                width: 160px;
+                height: 160px;
+            }
+
+            .meal-info {
+                .meal-name {
+                    font-size: 32px;
+                }
+
+                .meal-area-category {
+                    padding: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .recipe-details {
+        .close-recipe-details {
+            width: 16px;
+            height: 16px;
+            font-size: 12px;
+        }
+
+        .meal-preview {
+            .meal-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .meal-info {
+                .meal-name {
+                    font-size: 24px;
+                }
+
+                .meal-area-category {
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}

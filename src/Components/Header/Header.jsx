@@ -12,10 +12,10 @@ function Header() {
     return (
         <header className="header">
             <div className="head-strip">
-                <Link className='app-logo-link' to='/'>
+                <Link className='app-logo-link' to='/Bakery-App/'>
                     <img className="app-logo" src={BakeryLogo} alt="BakeryLogo" />
                 </Link>
-                <Link className='cart-logo-link' to='/checkout'>
+                <Link className='cart-logo-link' to='/Bakery-App/checkout'>
                     <div className='cart'>
                         <img className="cart-logo" src={CartLogo} alt="CartLogo" />
                         {cartCount>0 && <span className='cart-count'>{cartCount}</span>}

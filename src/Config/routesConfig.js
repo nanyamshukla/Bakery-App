@@ -6,11 +6,11 @@ import ErrorFallback from '../Pages/ErrorFallback/ErrorFallback';
 
 const routesConfig = createBrowserRouter([
     {
-        path: "/checkout",
+        path: "/Bakery-App/checkout",
         element: <Checkout />
     },
     {
-      path: "/",
+      path: "/Bakery-App/",
       element: <Home />,
       errorElement: <ErrorFallback />
     },

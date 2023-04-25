@@ -30,7 +30,7 @@ function Checkout() {
                 <span className='checkout-heading' >Checkout</span>
                 <div className='checkout-products-container'>
                     {Object.keys(cartData).length===0  
-                        ? <p className='empty-cart-msg'>Oops! The cart is empty. Please add some items in cart from the <Link to='/'>Home</Link> page.</p>
+                        ? <p className='empty-cart-msg'>Oops! The cart is empty. Please add some items in cart from the <Link to='/Bakery-App/'>Home</Link> page.</p>
                         : <div className='cart-total-checkout'>
                             <span className='cart-total'>Total: ${cartTotal}</span>
                             <button type='button' className='checkout-button' onClick={printReceipt}>Checkout</button>
